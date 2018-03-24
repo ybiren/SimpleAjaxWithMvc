@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script>
+
+
+window.onload = function() {
+	doAjaxReq();
+}
+</script>
+
+<style>
+	.container1 {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: center;
+		justify-content: center;
+		width: 40vw;
+		margin-left: 30vw;
+	}
+
+	.item1 {
+		border: 1px solid black;
+		flex: 1 0 0;
+		margin: 10px;
+		text-align: right;
+	}
+
+	.item1:nth-child(even) {
+		background-color: lightgray;
+	}
+	
+	.line-break {
+		width: 100%;
+	}
+</style>
+
+
+
+<div class="container1">
+	<div class="item1"><input type="text"></div>
+	<div class="item1">שם משתמש</div>
+  <div class="line-break"></div>
+	<div class="item1"><input type="text"></div>
+	<div  class="item1">&nbsp;&nbsp;&nbsp;סיסמא</div>
+</div>
+
+<div class="row">
+<input class="col-sm-offset-4 col-sm-2 text-right" type="text">
+<div class="col-sm-2 text-right">שם משתמש</div>
+</div>
+<div class="row">
+	<input class="col-sm-offset-4 col-sm-2 text-right" type="text">
+	<div class="col-sm-2 text-right">סיסמא</div>
+</div>
+<div class="row">
+	<button id="btn1" class="col-sm-offset-5 col-sm-2">שלח</button>
+</div>
+
+
+
+<div class="row">
+<img class="col-sm-offset-4 img1">
+</div>
+
+<div class="row">
+	<img class="col-sm-offset-4 img1">
+</div>
+
+
+
+<div style="border: 1px solid black;">
+<div style="border:1px solid red; position: relative;  margin: 0 auto;">
+<div style="clear: both;">
+	<div style="float: left; text-align: right;"><input type="text"/></div>
+  <div style="margin-left: 10px; float:left;text-align: right;display: inline-block;position:relative;">שם משתמש</div> 
+</div>
+	<div style="clear: both;">
+		<div style="float: left;text-align: right;"><input type="text" /></div>
+		<div style="margin-left: 10px;float: left;text-align: right;">סיסמא</div>
+	</div>
+
+</div>
+</div>
+
+
+
+
